@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px) {
+    #programming-impact {
+        display: grid;
+        grid-template-areas:
+            "main-header sub-header"
+            "main-header content";
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #programming-impact h2 {
+        grid-area: main-header;
+        padding-right: 1rem;
+        border-right: solid 1px #ddd;
+    }
+
+    #programming-impact .sub-heading {
+        grid-area: sub-header;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #programming-impact .pi-content  {
+        grid-area: content;
+    }
+}
